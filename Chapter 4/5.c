@@ -5,12 +5,12 @@
 
 int main(void)
 {
-    int n;
+    long long n;
     int check_digit;
     int n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11;
 
     printf("Enter the first 11 digits of a UPC: ");
-    scanf("%d", &n);
+    scanf("%lld", &n);
 
     n11 = n % 10;
     n10 = n % 100 / 10;
@@ -25,7 +25,6 @@ int main(void)
     n1 = n % 100000000000 / 10000000000;
 
     check_digit = 9 - (((((n1 + n3 + n5 + n7 + n9 + n11) * 3) + (n2 + n4 + n6 + n8 + n10)) - 1) % 10);
-
     printf("Check digit: %d\n", check_digit);
     
     return 0;
