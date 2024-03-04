@@ -8,7 +8,7 @@
 
 int main(void){
     int i, hh, mm, t_mins, diff_time, temp;
-    int d[8] = {480, 583, 252, 767, 840, 945, 1140, 1305};
+    int d[8] = {480, 583, 679, 767, 840, 945, 1140, 1305};
 
     printf("Enter a 24-hour time (hh:mm): ");
     scanf("%d:%d", &hh, &mm);
@@ -60,7 +60,7 @@ int main(void){
     d   a
     480	616
     583	712
-    252	811
+    679	811
     767	900
     840	968
     945	1045
